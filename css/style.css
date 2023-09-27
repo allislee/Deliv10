@@ -117,16 +117,18 @@ nav a:focus {text-decoration: underline}
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
-.skip a:focus{top: 20px}
-
+.skip a:focus{
+  top: 20px;
+  position:absolute;}
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
-*:focus{border-style: solid 2px;}
+*:focus{border: 2px solid tomato;}
 
 /* Step 4: Write selector/rule property to style the container */
-.container {display:grid; 
+.container {
+  display:grid; 
   grid-template-columns: 1fr 5fr 1fr; 
-  grid-row-gap: 15px;}
+  grid-gap: 15px;}
 
 img{width: 100%}
 
@@ -136,10 +138,6 @@ first div in the grid  and place it in the grid. */
   grid-column: 1 / -1;
   min-height: 500px;
   background-image: url('../images/header.jpg');
-  /* background-attachment: fixed;    
-  background-position: center;  
-  background-repeat: no-repeat;
-  background-size: cover;  */
 }
 
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
